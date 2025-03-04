@@ -65,14 +65,7 @@ li {
   width: 300px;
 }
 
-#about,
-#discord,
-#contact {
-  padding: 48px;
-}
-/*
-about 
-*/
+
 #about {
   background-color: #f8ffdc;
 }
@@ -90,14 +83,11 @@ h2 {
 img {
   width: 100%;
 }
-.about__img--wrapper,
-.section__discription--wrapper {
-  padding: 0 24px;
-}
 
 .section__discription--wrapper {
   width: 100%;
   padding: 24px 0px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
