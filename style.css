@@ -4,31 +4,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 nav {
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
   background-color: #cafdff;
 }
+
 header {
   background-color: #eadcff;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 50%);
   padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-h1 {
-  font-size: 24px;
+img {
+  width: 100%;
+  border-radius: 4px;
 }
-.subheader {
-  font-size: 18px;
-  margin: 16px 24px 24px 0;
-}
+
 button {
   padding: 8px 16px;
   background-color: #05c7cf;
@@ -38,22 +37,18 @@ button {
   cursor: pointer;
   font-size: 18px;
 }
+p {
+  line-height: 1.5;
+}
 
-a {
-  color: #000;
-  font-size: 24px;
-  font-weight: bold;
+h1 {
+  font-size: 72px;
 }
-.logo {
-  width: 300px;
+
+main section footer {
+  padding: 48px;
 }
-ul {
-  display: flex;
-}
-li {
-  list-style-type: none;
-  padding-left: 16px;
-}
+
 .row {
   width: 100%;
   max-width: 1300px;
@@ -61,33 +56,247 @@ li {
   align-items: center;
   justify-content: center;
 }
-.laptop {
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
+}
+ul {
+  display: flex;
+}
+
+a {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+li {
+  list-style-type: none;
+  padding-left: 16px;
+}
+.logo {
   width: 300px;
 }
 
-
-#about {
-  background-color: #f8ffdc;
+.home__discription,
+.home__img--wrapper {
+  width: 50%;
 }
+.home__img--wrapperz {
+  display: flex;
+  justify-content: center;
+}
+.home__img {
+  width: 80%;
+}
+
+/* 
+ABOUT
+*/
 
 h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 24px;
 }
+#about {
+  background-color: #f8ffdc;
+}
+
 .section__discription {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
-img {
-  width: 100%;
+.about__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
 }
 
 .section__discription--wrapper {
-  width: 100%;
-  padding: 24px 0px;
+  width: 60%;
+  padding: 0 24px;
+}
+.section__discription--para {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/*
+
+DISCORD 
+
+*/
+
+#discord {
+  background-color: #dce9ff;
+}
+/*
+CONTACT
+*/
+
+#contact {
+  background-color: #dce9ff;
+}
+
+form {
+  max-width: 100%;
+  max-width: 600px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+input,
+textarea {
+  font-size: 20px;
+  margin-bottom: 24px;
+  padding: 6px 12px;
+}
+
+input {
+  height: 40px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #aaf5ff;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.footer__logo {
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.footer__link {
+  padding: 0 16px;
+}
+
+.footer__links {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.home__discription,
+.home__img--wrapper {
+  width: 100%;
+}
+nav ul {
+  display: none;
+}
+
+.home__description {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.subheader {
+  text-align: center;
+  font-size: 28px;
+}
+
+.section__description {
+  flex-direction: column;
+}
+
+.section__description--wrapper,
+.about__img--wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#discord .section__description {
+  flex-direction: column-reverse;
+}
+
+form {
+  padding: 0 24px 24px;
+}
+
+footer {
+  padding: 48px 24px;
+}
+
+.footer__logo {
+  max-width: 400px;
+}
+
+.footer__link {
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+  }
+  .home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__description--button {
+    max-width: 240px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+  ul {
+    display: none;
+  }
+  .section__description {
+    flex-direction: column;
+  }
+  .section__description--wrapper{
+    width: 100%;
+  }
+  .about__img--wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+    
+  }
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+    
+footer {
+  padding: 48px 24px
+}
+
+  .footer__logo {
+    max-width: 360px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
 }
